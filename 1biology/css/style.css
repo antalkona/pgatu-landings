@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .startPage{
     width: 100vw;
     height: 100vh;
@@ -208,3 +209,225 @@ nav a {
 
 
 /* анимация-end */
+
+
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dirInfoPage{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.dipLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 35px;
+}
+.dipTitle{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 75px;
+    color: black;
+
+}
+.dipDesc{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 37px;
+    color: #535353;
+}
+.dipRight{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 35px;
+}
+.dipBtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.dipbProg{
+    cursor: pointer;
+    padding: 0 65px;
+    border-radius: 29px;
+    height: 50px;
+    background: #76c066;
+
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, background 0.2s; /* Плавное изменение цвета текста */
+
+
+
+
+
+
+}
+
+.dipbQue{
+    cursor: pointer;
+    padding: 0 35px;
+    border-radius: 29px;
+    height: 50px;
+    background: #e1ffdb;
+    color: #7cc86d;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, background 0.2s; /* Плавное изменение цвета текста */
+
+}
+.dipbProg:hover{
+    background: #e1ffdb;
+    color: #7cc86d;
+}
+.dipbQue:hover{
+    background: #76c066;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.activityPage{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+.apTitle{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: black;
+    margin-left: 1.5%;
+}
+
+.apStrokies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.apStroke{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.apsStroke{
+
+    border-radius: 200px;
+    height: 55px;
+
+    padding: 0 20px;
+    background: #e8fbe5;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+}
+.apssImg{
+    height: 30px;
+}
+.apssTxt{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #76c066;
+}
+
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hLeft{
+    border-radius: 37px;
+    height: 50px;
+    width: 60%;
+    background: linear-gradient(225deg, #94e483 0%, #73bd64 100%);
+}
