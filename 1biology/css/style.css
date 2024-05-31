@@ -676,7 +676,7 @@ header{
 .tpLeft{
     margin-left: 1.5%;
     width: 40%;
-    height: 90%;
+    height: 80%;
 
     display: flex;
     flex-direction: column;
@@ -688,7 +688,7 @@ header{
 
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: end;
     justify-content: space-between;
 }
 .tprTitle{
@@ -791,4 +791,16 @@ header{
 .tplbMore:hover{
     background: #fff;
     color: #76c066;
+}
+.tprNone{
+    margin-right: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: white;
+    height: 70vh;
+    border-radius: 20px;
 }
