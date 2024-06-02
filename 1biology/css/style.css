@@ -1078,3 +1078,122 @@ header{
 .iconImg{
     height: 35px;
 }
+
+.senquePage{
+    width: 100%;
+    height: 90vh;
+    background: #76C066;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+}
+.sqpHead{
+    position: absolute;
+    top: 0px;
+    background: white;
+    border-radius: 0 0 50px 50px;
+    height: 80px;
+    width: 100%;
+
+}
+.spHH{
+
+    width: 100%;
+    position: relative;
+}
+.spLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 50px;
+    width: 45%;
+    margin-left: 5%;
+}
+.splTitle{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 97%;
+    color: #fff;
+}
+.spBox{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15vh;
+}
+.splDes{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 97%;
+    color: #fff;
+}
+.spRight{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    width: 45%;
+    margin-right: 7.5%;
+}
+.sprInput{
+    width: 100%;
+    height: 80px;
+    border-radius: 23px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 97%;
+    color: #929292;
+    padding: 0 20px;
+
+}
+.sprInput2{
+    width: 100%;
+    height: 220px;
+    border-radius: 23px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 97%;
+    color: #929292;
+    padding: 20px;
+
+}
+.sprBtn {
+    margin-top: 20px;
+
+    cursor: pointer;
+    width: 100%;
+    height: 80px;
+    border-radius: 23px;
+    border: 2px solid white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 20px;
+    color: #ffffff;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.sprBtn:hover{
+    background: white;
+    color: #7CC86D;
+}
+.sprInput:focus, .sprInput2:focus {
+    outline: none; /* Убирает выделение при активации */
+    border-color: #66afe9; /* Изменяет цвет границы при фокусе */
+}
