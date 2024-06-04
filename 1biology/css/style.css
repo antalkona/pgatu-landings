@@ -1256,3 +1256,153 @@ header{
 .map{
     border-radius: 20px;
 }
+.Footer{
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.fMainCont{
+    width: 96%;
+    height: 80%;
+    background: linear-gradient(225deg, #94e483 0%, #73bd64 100%);
+    border-radius: 40px;
+}
+.fmContentContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.fmccCont{
+
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1%;
+}
+.fmccLeft{
+    width: 50%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5%;
+}
+.fmcclTitle{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 125px;
+    color: #fff;
+}
+.fmcclBox{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 3%;
+}
+.fmcclbTable{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+.fmmclbLinks{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+}
+.fmccRight{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.fmccEmail{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+.fmccPhone{
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+.fmccrSocial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.socImg{
+    height: 50px;
+}
+.fmccrBtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+}
+.fmccrb{
+    cursor: pointer;
+    border-radius: 62px;
+    padding: 0 30px;
+    height: 45px;
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7fcb70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fmccBg{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.fmccbImg{
+    z-index: 0;
+    position: absolute;
+    right: 2%;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.copyrights{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cLink{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #808080;
+    text-decoration: none;
+}
