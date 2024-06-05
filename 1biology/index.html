@@ -98,12 +98,20 @@
             <p class="dipDesc">Учебная программа готовит бакалавров для работы в области экологического мониторинга, охраны природы, устойчивого развития экологических систем.
                 Студенты изучают дисциплины - экологический мониторинг, ГИС и информационных технологии. </p>
             <div class="dipBtns">
-                <div class="dipbProg">Скачать программу</div>
+                <a href="biology.docx" class="dipbProg">Скачать программу</a>
                 <a href="#senquePage" class="dipbQue">Задать вопрос</a>
             </div>
         </div>
         <div class="dipRight">
-            <img src="./img/dipRight.png" alt="" class="dipRightImg">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img src="./img/dipRight.png" alt="Изображение 1" class="carousel-image">
+                    <img src="./img/dipRight.png" alt="Изображение 2" class="carousel-image">
+                    <img src="./img/dipRight.png" alt="Изображение 3" class="carousel-image">
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+                <button class="carousel-control next" onclick="nextSlide()">❯</button>
+            </div>
         </div>
     </div>
     <div class="activityPage" id="activityPage">
@@ -242,8 +250,8 @@
                 </div>
             </div>
             <div class="tplBtns">
-                <div class="tplbMore">Подробная информация</div>
-                <div class="tplbQue">Задать вопрос</div>
+                <a href="https://pgatu.ru/candidate/jottingSOO/index.html" class="tplbMore">Подробная информация</a>
+                <a class="tplbQue" href="#senquePage">Задать вопрос</a>
             </div>
         </div>
         <div class="tpRight">
@@ -312,7 +320,7 @@
             </div>
         </div>
     </div>
-    <div class="univesyPage">
+    <div class="univesyPage" id="univesyPage">
         <div class="upHeader">
             <h1 class="uphTitle">Об университете</h1>
             <p class="upDes">Универстит устремленный в будущее</p>
@@ -326,11 +334,11 @@
                 Д.Н. Прянишникова - это ведущий российский университет, предоставляющий высококачественное образование в области экологии, природопользования и аграрных технологий. Университет является крупным учебным и научно-исследовательским центром.</p>
         </div>
         <div class="upBtns">
-            <div class="upbHistory">История университета</div>
+            <a class="upbHistory" href="https://pgatu.ru/generalinfo/academyhistory/">История университета</a>
             <div class="upbVideo">Видео о университете</div>
         </div>
     </div>
-    <div class="faqPage">
+    <div class="faqPage" id="faqPage">
         <h1 class="gpTitle">FAQ</h1>
         <div class="gpRess">
             <div class="accordion">
@@ -425,14 +433,14 @@
                         <h1 class="fmcclTitle">Биология</h1>
                         <div class="fmcclBox">
                             <div class="fmcclbTable">
-                                <a href="#" class="fmmclbLinks">О направлении</a>
-                                <a href="#" class="fmmclbLinks">Направления деятельности</a>
-                                <a href="#" class="fmmclbLinks">Карьерные перспективы</a>
+                                <a href="#dirInfoPage" class="fmmclbLinks">О направлении</a>
+                                <a href="#activityPage" class="fmmclbLinks">Направления деятельности</a>
+                                <a href="#carierPage" class="fmmclbLinks">Карьерные перспективы</a>
                             </div>
                             <div class="fmcclbTable">
-                                <a href="#" class="fmmclbLinks">О направлении</a>
-                                <a href="#" class="fmmclbLinks">Направления деятельности</a>
-                                <a href="#" class="fmmclbLinks">Карьерные перспективы</a>
+                                <a href="#TrailsPage" class="fmmclbLinks">Вступительные испытания</a>
+                                <a href="#univesyPage" class="fmmclbLinks">Об университете</a>
+                                <a href="#faqPage" class="fmmclbLinks">FAQ</a>
                             </div>
                         </div>
                     </div>
@@ -440,12 +448,12 @@
                         <h1 class="fmccEmail">info@pgatu.ru</h1>
                         <h1 class="fmccPhone">+7 (342) 217-96-17</h1>
                         <div class="fmccrSocial">
-                            <a href=""><img src="./img/yt.png" alt="" class="socImg"></a>
-                            <a href=""><img src="./img/vk.png" alt="" class="socImg"></a>
+                            <a href="https://www.youtube.com/@user-mw3tp3ub7t"><img src="./img/yt.png" alt="" class="socImg"></a>
+                            <a href="https://vk.com/pgatu_perm"><img src="./img/vk.png" alt="" class="socImg"></a>
                         </div>
                         <div class="fmccrBtns">
-                            <div class="fmccrb">Сайт</div>
-                            <div class="fmccrb">Другие направения</div>
+                            <a class="fmccrb" href="https://pgatu.ru">Сайт</a>
+                            <a class="fmccrb">Другие направения</a>
                         </div>
                     </div>
                 </div>
@@ -454,11 +462,12 @@
         </div>
         <div class="copyrights">
             <a href="#" class="cLink">Политика конфиденциальности</a>
-            <a href="#" class="cLink">Разработка сайта</a>
+            <a href="https://github.com/antalkon" class="cLink">Разработка сайта</a>
         </div>
     </div>
     <script src="./script/hover.js"></script>
     <script src="./script/accord1.js"></script>
     <script src="./script/nav.js"></script>
+    <script src="./script/carusel.js"></script>
 </body>
 </html>
