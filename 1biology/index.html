@@ -14,15 +14,15 @@
         <div class="hLeft">
             <div class="hlContent">
                 <img src="./img/logo.png" alt="" class="hlcLogo">
-                <a href="#" class="hlcTxt">О направлении</a>
-                <a href="#" class="hlcTxt">Направления деятельности</a>
-                <a href="#" class="hlcTxt">Карьерные перспективы</a>
-                <a href="#" class="hlcTxt">Вступительные испытания</a>
+                <a href="#dirInfoPage" class="hlcTxt">О направлении</a>
+                <a href="#activityPage" class="hlcTxt">Направления деятельности</a>
+                <a href="#carierPage" class="hlcTxt">Карьерные перспективы</a>
+                <a href="#TrailsPage" class="hlcTxt">Вступительные испытания</a>
             </div>
         </div>
-        <div class="hBtn">
+        <a class="hBtn" href="biology.docx">
             Скачать программу
-        </div>
+        </a>
     </header>
     <div class="startPage">
         <div class="startCase">
@@ -32,10 +32,10 @@
                     <img src="./img/logo.png" alt="" class="schLogo">
                     <nav>
                         <ul>
-                            <li><a href="#about">О направлении</a></li>
-                            <li><a href="#activities">Направления деятельности</a></li>
-                            <li><a href="#careers">Карьерные перспективы</a></li>
-                            <li><a href="#admissions">Вступительные испытания</a></li>
+                            <li><a href="#dirInfoPage">О направлении</a></li>
+                            <li><a href="#activityPage">Направления деятельности</a></li>
+                            <li><a href="#carierPage">Карьерные перспективы</a></li>
+                            <li><a href="#TrailsPage">Вступительные испытания</a></li>
                         </ul>
                     </nav>
 
@@ -92,24 +92,24 @@
             </div>
         </div>
     </div>
-    <div class="dirInfoPage">
+    <div class="dirInfoPage" id="dirInfoPage">
         <div class="dipLeft">
             <h1 class="dipTitle">О направлении</h1>
             <p class="dipDesc">Учебная программа готовит бакалавров для работы в области экологического мониторинга, охраны природы, устойчивого развития экологических систем.
                 Студенты изучают дисциплины - экологический мониторинг, ГИС и информационных технологии. </p>
             <div class="dipBtns">
                 <div class="dipbProg">Скачать программу</div>
-                <div class="dipbQue">Задать вопрос</div>
+                <a href="#senquePage" class="dipbQue">Задать вопрос</a>
             </div>
         </div>
         <div class="dipRight">
             <img src="./img/dipRight.png" alt="" class="dipRightImg">
         </div>
     </div>
-    <div class="activityPage">
+    <div class="activityPage" id="activityPage">
         <h1 class="apTitle">Направления деятельности</h1>
         <div class="apStrokies">
-            <div class="apStroke">
+            <div class="apStroke left">
                 <div class="apsStroke">
                     <img src="./img/Hag.png" alt="" class="apssImg">
                     <p class="apssTxt">Охрана животного мира</p>
@@ -123,7 +123,7 @@
                     <p class="apssTxt">Охрана и оценка биообразования</p>
                 </div>
             </div>
-            <div class="apStroke">
+            <div class="apStroke right">
                 <div class="apsStroke">
                     <img src="./img/Cont.png" alt="" class="apssImg">
                     <p class="apssTxt">Биологический контроль окружающей среды</p>
@@ -137,8 +137,7 @@
                     <p class="apssTxt">Оценка воздействия на окружающую среду</p>
                 </div>
             </div>
-
-            <div class="apStroke">
+            <div class="apStroke left">
                 <div class="apsStroke">
                     <img src="./img/Cont.png" alt="" class="apssImg">
                     <p class="apssTxt">Охрана и оценка биообразования</p>
@@ -152,7 +151,7 @@
                     <p class="apssTxt">Менеджмент и аудит</p>
                 </div>
             </div>
-            <div class="apStroke">
+            <div class="apStroke right">
                 <div class="apsStroke">
                     <img src="./img/Doc.png" alt="" class="apssImg">
                     <p class="apssTxt">Восстановление биоресурсов</p>
@@ -161,19 +160,14 @@
                     <img src="./img/microscope.png" alt="" class="apssImg">
                     <p class="apssTxt">Осуществление мероприятий по охране здоровья человека</p>
                 </div>
-<!--                <div class="apsStroke">-->
-<!--                    <img src="./img/Man.png" alt="" class="apssImg">-->
-<!--                    <p class="apssTxt">Менеджмент и аудит</p>-->
-<!--                </div>-->
             </div>
-
-            </div>
+        </div>
 
         </div>
 
 
     </div>
-    <div class="carierPage">
+    <div class="carierPage" id="carierPage">
         <div class="cpFrame">
             <div class="cpfLeft">
                 <h1 class="cpflTitle">Кем вы сможете<br> работать после<br> выпуска</h1>
@@ -223,7 +217,7 @@
         </div>
     </div>
     <div class="classDpPage"></div>
-    <div class="TrailsPage">
+    <div class="TrailsPage" id="TrailsPage">
         <div class="tpLeft">
             <h1 class="tprTitle">Вступительные <br>испытания</h1>
             <div class="tprData">
@@ -387,7 +381,7 @@
             </div>
         </div>
     </div>
-    <div class="senquePage">
+    <div class="senquePage" id="senquePage">
         <div class="spHH">
             <div class="sqpHead"></div>
         </div>
@@ -465,5 +459,6 @@
     </div>
     <script src="./script/hover.js"></script>
     <script src="./script/accord1.js"></script>
+    <script src="./script/nav.js"></script>
 </body>
 </html>
