@@ -1,6 +1,6 @@
-// script.js
 
 let currentIndex = 0;
+let autoScrollInterval;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-image');
@@ -25,3 +25,22 @@ function nextSlide() {
 function prevSlide() {
     showSlide(currentIndex - 1);
 }
+
+function startAutoScroll() {
+    autoScrollInterval = setInterval(() => {
+        const randomInterval = Math.floor(Math.random() * (3000 - 2000 + 1)) + 2000;
+        nextSlide();
+        clearInterval(autoScrollInterval);
+        startAutoScroll();
+    }, Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000);
+}
+
+document.querySelector('.carousel').addEventListener('mouseenter', () => {
+    clearInterval(autoScrollInterval);
+});
+
+document.querySelector('.carousel').addEventListener('mouseleave', () => {
+    startAutoScroll();
+});
+
+startAutoScroll();
