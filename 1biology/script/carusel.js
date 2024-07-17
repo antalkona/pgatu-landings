@@ -28,7 +28,7 @@ function prevSlide() {
 
 function startAutoScroll() {
     autoScrollInterval = setInterval(() => {
-        const randomInterval = Math.floor(Math.random() * (3000 - 2000 + 1)) + 2000;
+        const randomInterval = Math.floor(Math.random() * (2000 - 1000 + 1)) + 2000;
         nextSlide();
         clearInterval(autoScrollInterval);
         startAutoScroll();
