@@ -8,8 +8,21 @@
     <title>Навправление - биология</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    
+
 </head>
 <body>
+    <div class="modal" id="modalw">
+        <div class="modalWindow">
+            <div class="mwHeader">
+                <h2 class="mwhTitle">Название</h2>
+                <div class="mwhClose" onclick="closeModal()"></div>
+            </div>
+        </div>
+    </div>
+
     <header id="header">
         <div class="hLeft">
             <div class="hlContent">
@@ -33,7 +46,7 @@
                     <img src="./img/logo.png" alt="" class="schLogo">
                     <nav>
                         <ul>
-                            <li><a href="#dirInfoPage">О направлении</a></li>
+                            <li><a href="#dirInfoPage" class="hel">О направлении</a></li>
                             <li><a href="#activityPage">Направления деятельности</a></li>
                             <li><a href="#carierPage">Карьерные перспективы</a></li>
                             <li><a href="#TrailsPage">Вступительные испытания</a></li>
@@ -54,15 +67,15 @@
                     <img src="./img/microscope.png" alt="" class="scmtImg">
                 </div>
                 <div class="scmInfoBtns">
-                    <div class="scmIBLE">
-                        <div class="scmInfoBox" id="hoverBox">
+                    <div class="scmIBLE" >
+                        <div class="scmInfoBox" data-hs-overlay="#hs-scroll-inside-viewport-modal" onclick="openModal()">
                             <h class="scmibDes">Форма обучения</h>
                             <h class="scmibTitle">Очная</h>
                             <img src="./img/Arrow.png" id="hoverImg" alt="" class="scmibArrow">
 
 
                         </div>
-                        <div class="scmInfoBox" id="hoverBox2">
+                        <div class="scmInfoBox" id="hoverBox2" onclick="openModal()">
                             <h class="scmibDes">Квалификация выпускника</h>
                             <h class="scmibTitle">Бакалавр</h>
                             <img src="./img/Arrow.png" alt="" id="hoverImg2" class="scmibArrow">
@@ -72,14 +85,14 @@
                     </div>
 
                     <div class="scmIBLE">
-                        <div class="scmInfoBox" id="hoverBox3">
+                        <div class="scmInfoBox" id="hoverBox3" onclick="openModal()">
                         <h class="scmibDes">Длительность</h>
                         <h class="scmibTitle">4 Года</h>
                         <img src="./img/Arrow.png" alt="" id="hoverImg3" class="scmibArrow">
 
 
                     </div>
-                        <div class="scmInfoBox" id="hoverBox4">
+                        <div class="scmInfoBox" id="hoverBox4" onclick="openModal()">
                             <h class="scmibDes">Проходной балл (2023 г.)</h>
                             <h class="scmibTitle">122</h>
                             <img src="./img/Arrow.png" alt="" id="hoverImg4" class="scmibArrow">
@@ -446,7 +459,18 @@
             <a href="https://github.com/antalkon" class="cLink">Разработка сайта</a>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
     <script src="./script/hover.js"></script>
+    <script src="./script/modal.js"></script>
+
     <script src="./script/accord1.js"></script>
     <script src="./script/nav.js"></script>
     <script src="./script/carusel.js"></script>
